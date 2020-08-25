@@ -1,0 +1,40 @@
+Udacity Data Structures & Algorthims Onboarding
+----------------------------------------------
+
+PROJECT Deadlines:
+------------------
+Unscramble Computer Science Problems:
+    Deconstruct a series of open-ended problems into smaller components
+DUE DATE: Sept. 6, 2020
+
+Show Me the Data Structures (Oct. 4, 2020):
+    Solve a series of open-ended practice problems. Hone your skills to identify
+    and implement appropriate data structures and corresponding methods that meet given 
+    constriants. 
+
+Problems vs. Algorithms (Nov. 1, 2020):
+    A series of real-world open ended porblems which train you to apply suitable data structures and 
+    algorithms under different context. 
+
+Route Planner (Nov. 29, 2020):
+    In this project, you will build a route-planning algorithms like the ones used in Google
+    Maps to calculate the shortest path between two points on a map 
+
+Improve Your LinkedIn Profile (Nov. 30, 2020)
+    Find your next job or connect with industry peer son LinkedIn. Ensure your profile atttracts
+    relevant leads that will grow your professional network. 
+
+Optimize Your GitHub Profile:
+
+
+Technical Mentor Support: is provided through our Knowledge platform. On Knowledge, you can search 
+for answers to questions similar to yours or post new questions related to your project or lessons
+
+Peer Chat: is available through our Student Hub platform. In Student Hub, you can chat wit other
+students in general community channels or trade technical tips and ideas in project-specfic channels. 
+
+Career Support: is available for all students and alumni and includes 1:1 Career Coaching sessions, 
+    expert feedback on your application materials profiles, and lessons on "How to Network Successfully"
+    to "Rehearsing for Interviews", and more. 
+
+General Account Help:
