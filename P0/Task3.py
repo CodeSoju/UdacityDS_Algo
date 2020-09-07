@@ -3,6 +3,7 @@ Read file into texts and calls.
 It's ok if you don't understand how to read files.
 """
 import csv
+import re
 
 with open('texts.csv', 'r') as f:
     reader = csv.reader(f)
@@ -43,3 +44,56 @@ Print the answer as a part of a message::
 to other fixed lines in Bangalore."
 The percentage should have 2 decimal digits
 """
+
+#Global vars
+PREFIX_FIXED_LINES = '('
+SUFFIX_FIXED_LINES = ')'
+MOBILE_PREFIX = ['7', '8', '9']
+BANGALORE_AREA_CODE = '080'
+
+codesList = set()
+totalCallsFromBangalore = 0
+totalCallsFromBangaloreToBanglore = 0
+
+
+'''
+Returns: true if phone number is from Bangalore, false otherwise
+Input: String:: phone number
+'''
+def isBangalore(phoneNumber):
+  if phoneNumber[0] == PREFIX_FIXED_LINES:
+    areaCode = phoneNumber[1:4]
+  else:
+    areaCode = phoneNumber
+  
+  if areaCode == BANGALORE_AREA_CODE:
+    return True
+  return False
+
+def answerNumber(phoneNumber):
+  if phoneNumber[0] == PREFIX_FIXED_LINES:
+    return phoneNumber.split(SUFFIX_FIXED_LINES, 1)[0][1:]
+  else:
+    return phoneNumber[0:4]
+  return 0
+  
+for call in calls:
+  if isBangalore(call[0]):
+    totalCallsFromBangalore += 1
+    result = answerNumber(call[1])
+    codesList.add(result)
+    
+    if isBangalore(result):
+      totalCallsFromBangaloreToBanglore += 1
+
+#Part A
+codesList = sorted(codesList, reverse=False)
+print("The numbers called by people in Bangalore have codes:")
+for code in codesList:
+  print(code)
+
+#Part B
+fraction = float(totalCallsFromBangaloreToBanglore) / float((totalCallsFromBangalore))
+percentage = "{0:.2%}".format(fraction)
+print("{} percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.".format(percentage))
+
