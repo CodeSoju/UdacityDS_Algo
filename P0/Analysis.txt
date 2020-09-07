@@ -1,0 +1,18 @@
+Time Complexity of each task:
+
+Task 0:
+The T.C. of this task is O(1) since we are just retrieving data from the .csv file. 
+
+Task 1:
+The T.C. is O(n) with n being length of the text and call lists. The loops both go from 0 to n. 
+
+Task 2:
+The T.C. is O(n) with n being the length of the calls list. The for-loop will iterate from 0 to n. The conditionals will hold no 
+significant difference to the T.C..
+
+Task 3: 
+The two functions have a T.C. of 0(1) since they are just conditionals. The for-loop which is calculating whether the number is from Bangalore is checking from the length of calls list which we will say is n. So the T.C. is O(n).
+
+Task 4: 
+The T.C. of T4 is O(k) since we are iterating through the call and text list. Those lists have their respective lengths, say m and n. 
+The overall T.C. of these loops would be O(m+n) which for the sake of this analysis we say is equal to k. So O(m+n) = O(k) 
